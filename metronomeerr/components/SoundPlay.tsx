@@ -2,15 +2,15 @@
 import tickSound from "../public/sounds/tick1.wav";
 
 export default function SoundPlay() {
-  const sound1 = new Audio(tickSound);
+  const tick = new Audio(tickSound);
 
-  const soundPlayHandler = () => {
-    sound1.play();
-    console.log("hi");
+  const soundHandler = () => {
+    tick.play();
   };
+
   return (
     <>
-      <button onClick={soundPlayHandler}>소리 재생 버튼</button>
+      <button onClick={soundHandler}>소리 재생 버튼</button>
     </>
   );
 }
